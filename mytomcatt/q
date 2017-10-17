@@ -1,0 +1,7 @@
+FROM tomcat:8-jre8
+
+RUN apt-get update
+RUN apt-get install postgresql|-9.5
+COPY dbproject.war /usr/local/tomacat/webapps/
+
+
